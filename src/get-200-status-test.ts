@@ -3,7 +3,8 @@ import { Options } from 'k6/options';
 import http from 'k6/http';
 
 export let options:Options = {
-  vus: 1
+  vus: 100,
+  iterations: 100
 };
 
 export default () => {
